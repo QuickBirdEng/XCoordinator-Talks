@@ -1,6 +1,0 @@
-framework module Pods_HackNight_XCoordinatorUITests {
-  umbrella header "Pods-HackNight-XCoordinatorUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
