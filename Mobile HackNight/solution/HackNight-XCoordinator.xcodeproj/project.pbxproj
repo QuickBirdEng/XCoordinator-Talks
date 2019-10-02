@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		024E58A9363DADE950285A26 /* Pods_HackNight_XCoordinatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74022FC156CAAEE129768CC /* Pods_HackNight_XCoordinatorTests.framework */; };
+		848EEE8B712D106CDE224BC5 /* Pods_HackNight_XCoordinatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5477E07E40A56323FDD8324 /* Pods_HackNight_XCoordinatorUITests.framework */; };
+		9B9356A222CB7CEC00B6D8A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9356A122CB7CEC00B6D8A0 /* AppDelegate.swift */; };
+		9B9356A922CB7CEF00B6D8A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B9356A822CB7CEF00B6D8A0 /* Assets.xcassets */; };
+		9B9356AC22CB7CEF00B6D8A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9356AA22CB7CEF00B6D8A0 /* LaunchScreen.storyboard */; };
+		9B9356B722CB7CEF00B6D8A0 /* HackNight_XCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9356B622CB7CEF00B6D8A0 /* HackNight_XCoordinatorTests.swift */; };
+		9B9356C222CB7CEF00B6D8A0 /* HackNight_XCoordinatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9356C122CB7CEF00B6D8A0 /* HackNight_XCoordinatorUITests.swift */; };
+		9B9356D322CB7FCF00B6D8A0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9356CF22CB7FCF00B6D8A0 /* LoginViewController.swift */; };
+		9B9356D622CB7FCF00B6D8A0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9356D222CB7FCF00B6D8A0 /* LoginViewController.xib */; };
+		9B9356DD22CB845200B6D8A0 /* TalkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9356D922CB845200B6D8A0 /* TalkListViewController.swift */; };
+		9B9356E022CB845200B6D8A0 /* TalkListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9356DC22CB845200B6D8A0 /* TalkListViewController.xib */; };
+		9B9356E322CB84CB00B6D8A0 /* TalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9356E222CB84CA00B6D8A0 /* TalkTableViewCell.swift */; };
+		9B9356E622CB89C100B6D8A0 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9356E522CB89C100B6D8A0 /* Talk.swift */; };
+		9B9356EC22CB8B9500B6D8A0 /* TalkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9356E822CB8B9500B6D8A0 /* TalkDetailViewController.swift */; };
+		9B9356EF22CB8B9500B6D8A0 /* TalkDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9356EB22CB8B9500B6D8A0 /* TalkDetailViewController.xib */; };
+		9B9356F222CB965B00B6D8A0 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9356F122CB965B00B6D8A0 /* Company.swift */; };
+		9B9356F922CB96D300B6D8A0 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9356F522CB96D300B6D8A0 /* CompanyViewController.swift */; };
+		9B9356FC22CB96D300B6D8A0 /* CompanyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9356F822CB96D300B6D8A0 /* CompanyViewController.xib */; };
+		9B9356FE22CBA27F00B6D8A0 /* ModelCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9356FD22CBA27F00B6D8A0 /* ModelCreation.swift */; };
+		9B93570322CBB14F00B6D8A0 /* LoginRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93570222CBB14F00B6D8A0 /* LoginRoute.swift */; };
+		9B93570922CBB3AF00B6D8A0 /* Animation+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93570422CBB3AE00B6D8A0 /* Animation+Scale.swift */; };
+		9B93570A22CBB3AF00B6D8A0 /* Animation+Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93570522CBB3AE00B6D8A0 /* Animation+Modal.swift */; };
+		9B93570B22CBB3AF00B6D8A0 /* Animation+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93570622CBB3AF00B6D8A0 /* Animation+Navigation.swift */; };
+		9B93570C22CBB3AF00B6D8A0 /* Animation+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93570722CBB3AF00B6D8A0 /* Animation+Fade.swift */; };
+		9B93570D22CBB3AF00B6D8A0 /* Animation+Swirl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93570822CBB3AF00B6D8A0 /* Animation+Swirl.swift */; };
+		9B93571022CBB43B00B6D8A0 /* UIKit+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93570F22CBB43B00B6D8A0 /* UIKit+Animations.swift */; };
+		9B93571222CBB4CA00B6D8A0 /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93571122CBB4CA00B6D8A0 /* HomeRoute.swift */; };
+		9B93571422CBB9B200B6D8A0 /* TalksRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93571322CBB9B200B6D8A0 /* TalksRoute.swift */; };
+		9B93571622CBB9C400B6D8A0 /* CompanyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93571522CBB9C400B6D8A0 /* CompanyRoute.swift */; };
+		9BD500F522D32D2F005ABF0D /* Collection+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD500F422D32D2F005ABF0D /* Collection+SafeSubscript.swift */; };
+		EAE2E3B86D1FEEE5963FA907 /* Pods_HackNight_XCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3BEB8C94C5325A09D12EE8 /* Pods_HackNight_XCoordinator.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B9356B322CB7CEF00B6D8A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B93569622CB7CEC00B6D8A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B93569D22CB7CEC00B6D8A0;
+			remoteInfo = "HackNight-XCoordinator";
+		};
+		9B9356BE22CB7CEF00B6D8A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B93569622CB7CEC00B6D8A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B93569D22CB7CEC00B6D8A0;
+			remoteInfo = "HackNight-XCoordinator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0870B4B225BBD1713069D484 /* Pods-HackNight-XCoordinator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackNight-XCoordinator.release.xcconfig"; path = "Target Support Files/Pods-HackNight-XCoordinator/Pods-HackNight-XCoordinator.release.xcconfig"; sourceTree = "<group>"; };
+		09F77FB2D2DD445902FAD46B /* Pods-HackNight-XCoordinatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackNight-XCoordinatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-HackNight-XCoordinatorUITests/Pods-HackNight-XCoordinatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		57BF891DDFC5E9B89175AD49 /* Pods-HackNight-XCoordinatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackNight-XCoordinatorTests.debug.xcconfig"; path = "Target Support Files/Pods-HackNight-XCoordinatorTests/Pods-HackNight-XCoordinatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		710C252A8D0E5AEBB7239899 /* Pods-HackNight-XCoordinatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackNight-XCoordinatorTests.release.xcconfig"; path = "Target Support Files/Pods-HackNight-XCoordinatorTests/Pods-HackNight-XCoordinatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F835822B656E8D0CB1A32C7 /* Pods-HackNight-XCoordinator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackNight-XCoordinator.debug.xcconfig"; path = "Target Support Files/Pods-HackNight-XCoordinator/Pods-HackNight-XCoordinator.debug.xcconfig"; sourceTree = "<group>"; };
+		8F3BEB8C94C5325A09D12EE8 /* Pods_HackNight_XCoordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackNight_XCoordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		930F0DE2FC894CEE751C992F /* Pods-HackNight-XCoordinatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackNight-XCoordinatorUITests.release.xcconfig"; path = "Target Support Files/Pods-HackNight-XCoordinatorUITests/Pods-HackNight-XCoordinatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B93569E22CB7CEC00B6D8A0 /* HackNight-XCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HackNight-XCoordinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9356A122CB7CEC00B6D8A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B9356A822CB7CEF00B6D8A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B9356AB22CB7CEF00B6D8A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B9356AD22CB7CEF00B6D8A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B9356B222CB7CEF00B6D8A0 /* HackNight-XCoordinatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HackNight-XCoordinatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9356B622CB7CEF00B6D8A0 /* HackNight_XCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackNight_XCoordinatorTests.swift; sourceTree = "<group>"; };
+		9B9356B822CB7CEF00B6D8A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B9356BD22CB7CEF00B6D8A0 /* HackNight-XCoordinatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HackNight-XCoordinatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9356C122CB7CEF00B6D8A0 /* HackNight_XCoordinatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackNight_XCoordinatorUITests.swift; sourceTree = "<group>"; };
+		9B9356C322CB7CEF00B6D8A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B9356CF22CB7FCF00B6D8A0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9B9356D222CB7FCF00B6D8A0 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		9B9356D922CB845200B6D8A0 /* TalkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkListViewController.swift; sourceTree = "<group>"; };
+		9B9356DC22CB845200B6D8A0 /* TalkListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalkListViewController.xib; sourceTree = "<group>"; };
+		9B9356E222CB84CA00B6D8A0 /* TalkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkTableViewCell.swift; sourceTree = "<group>"; };
+		9B9356E522CB89C100B6D8A0 /* Talk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
+		9B9356E822CB8B9500B6D8A0 /* TalkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkDetailViewController.swift; sourceTree = "<group>"; };
+		9B9356EB22CB8B9500B6D8A0 /* TalkDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalkDetailViewController.xib; sourceTree = "<group>"; };
+		9B9356F122CB965B00B6D8A0 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		9B9356F522CB96D300B6D8A0 /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
+		9B9356F822CB96D300B6D8A0 /* CompanyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyViewController.xib; sourceTree = "<group>"; };
+		9B9356FD22CBA27F00B6D8A0 /* ModelCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCreation.swift; sourceTree = "<group>"; };
+		9B93570222CBB14F00B6D8A0 /* LoginRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoute.swift; sourceTree = "<group>"; };
+		9B93570422CBB3AE00B6D8A0 /* Animation+Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animation+Scale.swift"; sourceTree = "<group>"; };
+		9B93570522CBB3AE00B6D8A0 /* Animation+Modal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animation+Modal.swift"; sourceTree = "<group>"; };
+		9B93570622CBB3AF00B6D8A0 /* Animation+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animation+Navigation.swift"; sourceTree = "<group>"; };
+		9B93570722CBB3AF00B6D8A0 /* Animation+Fade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animation+Fade.swift"; sourceTree = "<group>"; };
+		9B93570822CBB3AF00B6D8A0 /* Animation+Swirl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animation+Swirl.swift"; sourceTree = "<group>"; };
+		9B93570F22CBB43B00B6D8A0 /* UIKit+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Animations.swift"; sourceTree = "<group>"; };
+		9B93571122CBB4CA00B6D8A0 /* HomeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
+		9B93571322CBB9B200B6D8A0 /* TalksRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksRoute.swift; sourceTree = "<group>"; };
+		9B93571522CBB9C400B6D8A0 /* CompanyRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRoute.swift; sourceTree = "<group>"; };
+		9BD500F422D32D2F005ABF0D /* Collection+SafeSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+SafeSubscript.swift"; sourceTree = "<group>"; };
+		B5477E07E40A56323FDD8324 /* Pods_HackNight_XCoordinatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackNight_XCoordinatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B74022FC156CAAEE129768CC /* Pods_HackNight_XCoordinatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackNight_XCoordinatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B93569B22CB7CEC00B6D8A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE2E3B86D1FEEE5963FA907 /* Pods_HackNight_XCoordinator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9356AF22CB7CEF00B6D8A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				024E58A9363DADE950285A26 /* Pods_HackNight_XCoordinatorTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9356BA22CB7CEF00B6D8A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848EEE8B712D106CDE224BC5 /* Pods_HackNight_XCoordinatorUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		789B52BBF6C9B2BE76B42571 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F835822B656E8D0CB1A32C7 /* Pods-HackNight-XCoordinator.debug.xcconfig */,
+				0870B4B225BBD1713069D484 /* Pods-HackNight-XCoordinator.release.xcconfig */,
+				57BF891DDFC5E9B89175AD49 /* Pods-HackNight-XCoordinatorTests.debug.xcconfig */,
+				710C252A8D0E5AEBB7239899 /* Pods-HackNight-XCoordinatorTests.release.xcconfig */,
+				09F77FB2D2DD445902FAD46B /* Pods-HackNight-XCoordinatorUITests.debug.xcconfig */,
+				930F0DE2FC894CEE751C992F /* Pods-HackNight-XCoordinatorUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9B93569522CB7CEC00B6D8A0 = {
+			isa = PBXGroup;
+			children = (
+				9B9356A022CB7CEC00B6D8A0 /* HackNight-XCoordinator */,
+				9B9356B522CB7CEF00B6D8A0 /* HackNight-XCoordinatorTests */,
+				9B9356C022CB7CEF00B6D8A0 /* HackNight-XCoordinatorUITests */,
+				9B93569F22CB7CEC00B6D8A0 /* Products */,
+				789B52BBF6C9B2BE76B42571 /* Pods */,
+				A3F0C0329D0B6EAC35FF631D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B93569F22CB7CEC00B6D8A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B93569E22CB7CEC00B6D8A0 /* HackNight-XCoordinator.app */,
+				9B9356B222CB7CEF00B6D8A0 /* HackNight-XCoordinatorTests.xctest */,
+				9B9356BD22CB7CEF00B6D8A0 /* HackNight-XCoordinatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B9356A022CB7CEC00B6D8A0 /* HackNight-XCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9B9356A122CB7CEC00B6D8A0 /* AppDelegate.swift */,
+				9B93570122CBB13C00B6D8A0 /* Routing */,
+				9B9356D822CB837D00B6D8A0 /* Scenes */,
+				9B9356E722CB89C900B6D8A0 /* Model */,
+				9B9356E422CB84CE00B6D8A0 /* Views */,
+				9BD500F322D32D0B005ABF0D /* Extensions */,
+				9B93570E22CBB3B400B6D8A0 /* Animations */,
+				9B9356A822CB7CEF00B6D8A0 /* Assets.xcassets */,
+				9B9356AA22CB7CEF00B6D8A0 /* LaunchScreen.storyboard */,
+				9B9356AD22CB7CEF00B6D8A0 /* Info.plist */,
+			);
+			path = "HackNight-XCoordinator";
+			sourceTree = "<group>";
+		};
+		9B9356B522CB7CEF00B6D8A0 /* HackNight-XCoordinatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B9356B622CB7CEF00B6D8A0 /* HackNight_XCoordinatorTests.swift */,
+				9B9356B822CB7CEF00B6D8A0 /* Info.plist */,
+			);
+			path = "HackNight-XCoordinatorTests";
+			sourceTree = "<group>";
+		};
+		9B9356C022CB7CEF00B6D8A0 /* HackNight-XCoordinatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9B9356C122CB7CEF00B6D8A0 /* HackNight_XCoordinatorUITests.swift */,
+				9B9356C322CB7CEF00B6D8A0 /* Info.plist */,
+			);
+			path = "HackNight-XCoordinatorUITests";
+			sourceTree = "<group>";
+		};
+		9B9356D722CB7FE800B6D8A0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9B9356CF22CB7FCF00B6D8A0 /* LoginViewController.swift */,
+				9B9356D222CB7FCF00B6D8A0 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9B9356D822CB837D00B6D8A0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9B9356D722CB7FE800B6D8A0 /* Login */,
+				9B9356E122CB845700B6D8A0 /* TalkList */,
+				9B9356F022CB8B9B00B6D8A0 /* TalkDetail */,
+				9B9356F422CB96B700B6D8A0 /* Company */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9B9356E122CB845700B6D8A0 /* TalkList */ = {
+			isa = PBXGroup;
+			children = (
+				9B9356D922CB845200B6D8A0 /* TalkListViewController.swift */,
+				9B9356DC22CB845200B6D8A0 /* TalkListViewController.xib */,
+			);
+			path = TalkList;
+			sourceTree = "<group>";
+		};
+		9B9356E422CB84CE00B6D8A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B9356E222CB84CA00B6D8A0 /* TalkTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B9356E722CB89C900B6D8A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B9356FD22CBA27F00B6D8A0 /* ModelCreation.swift */,
+				9B9356E522CB89C100B6D8A0 /* Talk.swift */,
+				9B9356F122CB965B00B6D8A0 /* Company.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B9356F022CB8B9B00B6D8A0 /* TalkDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9B9356E822CB8B9500B6D8A0 /* TalkDetailViewController.swift */,
+				9B9356EB22CB8B9500B6D8A0 /* TalkDetailViewController.xib */,
+			);
+			path = TalkDetail;
+			sourceTree = "<group>";
+		};
+		9B9356F422CB96B700B6D8A0 /* Company */ = {
+			isa = PBXGroup;
+			children = (
+				9B9356F522CB96D300B6D8A0 /* CompanyViewController.swift */,
+				9B9356F822CB96D300B6D8A0 /* CompanyViewController.xib */,
+			);
+			path = Company;
+			sourceTree = "<group>";
+		};
+		9B93570122CBB13C00B6D8A0 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				9B93570222CBB14F00B6D8A0 /* LoginRoute.swift */,
+				9B93571122CBB4CA00B6D8A0 /* HomeRoute.swift */,
+				9B93571322CBB9B200B6D8A0 /* TalksRoute.swift */,
+				9B93571522CBB9C400B6D8A0 /* CompanyRoute.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		9B93570E22CBB3B400B6D8A0 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				9B93570722CBB3AF00B6D8A0 /* Animation+Fade.swift */,
+				9B93570522CBB3AE00B6D8A0 /* Animation+Modal.swift */,
+				9B93570622CBB3AF00B6D8A0 /* Animation+Navigation.swift */,
+				9B93570422CBB3AE00B6D8A0 /* Animation+Scale.swift */,
+				9B93570822CBB3AF00B6D8A0 /* Animation+Swirl.swift */,
+				9B93570F22CBB43B00B6D8A0 /* UIKit+Animations.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		9BD500F322D32D0B005ABF0D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9BD500F422D32D2F005ABF0D /* Collection+SafeSubscript.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A3F0C0329D0B6EAC35FF631D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F3BEB8C94C5325A09D12EE8 /* Pods_HackNight_XCoordinator.framework */,
+				B74022FC156CAAEE129768CC /* Pods_HackNight_XCoordinatorTests.framework */,
+				B5477E07E40A56323FDD8324 /* Pods_HackNight_XCoordinatorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B93569D22CB7CEC00B6D8A0 /* HackNight-XCoordinator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B9356C622CB7CEF00B6D8A0 /* Build configuration list for PBXNativeTarget "HackNight-XCoordinator" */;
+			buildPhases = (
+				6E0AFBC42A2F75E53A116C72 /* [CP] Check Pods Manifest.lock */,
+				9B93569A22CB7CEC00B6D8A0 /* Sources */,
+				9B93569B22CB7CEC00B6D8A0 /* Frameworks */,
+				9B93569C22CB7CEC00B6D8A0 /* Resources */,
+				53F53FA601EDA4D0B9A36CDF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HackNight-XCoordinator";
+			productName = "HackNight-XCoordinator";
+			productReference = 9B93569E22CB7CEC00B6D8A0 /* HackNight-XCoordinator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B9356B122CB7CEF00B6D8A0 /* HackNight-XCoordinatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B9356C922CB7CEF00B6D8A0 /* Build configuration list for PBXNativeTarget "HackNight-XCoordinatorTests" */;
+			buildPhases = (
+				9CFE4F0088B3B4BC8D3A1401 /* [CP] Check Pods Manifest.lock */,
+				9B9356AE22CB7CEF00B6D8A0 /* Sources */,
+				9B9356AF22CB7CEF00B6D8A0 /* Frameworks */,
+				9B9356B022CB7CEF00B6D8A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B9356B422CB7CEF00B6D8A0 /* PBXTargetDependency */,
+			);
+			name = "HackNight-XCoordinatorTests";
+			productName = "HackNight-XCoordinatorTests";
+			productReference = 9B9356B222CB7CEF00B6D8A0 /* HackNight-XCoordinatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9B9356BC22CB7CEF00B6D8A0 /* HackNight-XCoordinatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B9356CC22CB7CEF00B6D8A0 /* Build configuration list for PBXNativeTarget "HackNight-XCoordinatorUITests" */;
+			buildPhases = (
+				6C41AF9EBEE6EC9A3AEF2640 /* [CP] Check Pods Manifest.lock */,
+				9B9356B922CB7CEF00B6D8A0 /* Sources */,
+				9B9356BA22CB7CEF00B6D8A0 /* Frameworks */,
+				9B9356BB22CB7CEF00B6D8A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B9356BF22CB7CEF00B6D8A0 /* PBXTargetDependency */,
+			);
+			name = "HackNight-XCoordinatorUITests";
+			productName = "HackNight-XCoordinatorUITests";
+			productReference = 9B9356BD22CB7CEF00B6D8A0 /* HackNight-XCoordinatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B93569622CB7CEC00B6D8A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "QuickBird Studios";
+				TargetAttributes = {
+					9B93569D22CB7CEC00B6D8A0 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9B9356B122CB7CEF00B6D8A0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 9B93569D22CB7CEC00B6D8A0;
+					};
+					9B9356BC22CB7CEF00B6D8A0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 9B93569D22CB7CEC00B6D8A0;
+					};
+				};
+			};
+			buildConfigurationList = 9B93569922CB7CEC00B6D8A0 /* Build configuration list for PBXProject "HackNight-XCoordinator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B93569522CB7CEC00B6D8A0;
+			productRefGroup = 9B93569F22CB7CEC00B6D8A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B93569D22CB7CEC00B6D8A0 /* HackNight-XCoordinator */,
+				9B9356B122CB7CEF00B6D8A0 /* HackNight-XCoordinatorTests */,
+				9B9356BC22CB7CEF00B6D8A0 /* HackNight-XCoordinatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B93569C22CB7CEC00B6D8A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9356D622CB7FCF00B6D8A0 /* LoginViewController.xib in Resources */,
+				9B9356AC22CB7CEF00B6D8A0 /* LaunchScreen.storyboard in Resources */,
+				9B9356E022CB845200B6D8A0 /* TalkListViewController.xib in Resources */,
+				9B9356EF22CB8B9500B6D8A0 /* TalkDetailViewController.xib in Resources */,
+				9B9356FC22CB96D300B6D8A0 /* CompanyViewController.xib in Resources */,
+				9B9356A922CB7CEF00B6D8A0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9356B022CB7CEF00B6D8A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9356BB22CB7CEF00B6D8A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53F53FA601EDA4D0B9A36CDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HackNight-XCoordinator/Pods-HackNight-XCoordinator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HackNight-XCoordinator/Pods-HackNight-XCoordinator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HackNight-XCoordinator/Pods-HackNight-XCoordinator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C41AF9EBEE6EC9A3AEF2640 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackNight-XCoordinatorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E0AFBC42A2F75E53A116C72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackNight-XCoordinator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CFE4F0088B3B4BC8D3A1401 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackNight-XCoordinatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B93569A22CB7CEC00B6D8A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B93570922CBB3AF00B6D8A0 /* Animation+Scale.swift in Sources */,
+				9B93571222CBB4CA00B6D8A0 /* HomeRoute.swift in Sources */,
+				9B9356F922CB96D300B6D8A0 /* CompanyViewController.swift in Sources */,
+				9B93571422CBB9B200B6D8A0 /* TalksRoute.swift in Sources */,
+				9B9356F222CB965B00B6D8A0 /* Company.swift in Sources */,
+				9B9356FE22CBA27F00B6D8A0 /* ModelCreation.swift in Sources */,
+				9B93570D22CBB3AF00B6D8A0 /* Animation+Swirl.swift in Sources */,
+				9B93571022CBB43B00B6D8A0 /* UIKit+Animations.swift in Sources */,
+				9B93570322CBB14F00B6D8A0 /* LoginRoute.swift in Sources */,
+				9B9356D322CB7FCF00B6D8A0 /* LoginViewController.swift in Sources */,
+				9B93571622CBB9C400B6D8A0 /* CompanyRoute.swift in Sources */,
+				9B93570B22CBB3AF00B6D8A0 /* Animation+Navigation.swift in Sources */,
+				9B9356E322CB84CB00B6D8A0 /* TalkTableViewCell.swift in Sources */,
+				9B9356DD22CB845200B6D8A0 /* TalkListViewController.swift in Sources */,
+				9BD500F522D32D2F005ABF0D /* Collection+SafeSubscript.swift in Sources */,
+				9B93570A22CBB3AF00B6D8A0 /* Animation+Modal.swift in Sources */,
+				9B93570C22CBB3AF00B6D8A0 /* Animation+Fade.swift in Sources */,
+				9B9356E622CB89C100B6D8A0 /* Talk.swift in Sources */,
+				9B9356A222CB7CEC00B6D8A0 /* AppDelegate.swift in Sources */,
+				9B9356EC22CB8B9500B6D8A0 /* TalkDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9356AE22CB7CEF00B6D8A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9356B722CB7CEF00B6D8A0 /* HackNight_XCoordinatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9356B922CB7CEF00B6D8A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9356C222CB7CEF00B6D8A0 /* HackNight_XCoordinatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B9356B422CB7CEF00B6D8A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B93569D22CB7CEC00B6D8A0 /* HackNight-XCoordinator */;
+			targetProxy = 9B9356B322CB7CEF00B6D8A0 /* PBXContainerItemProxy */;
+		};
+		9B9356BF22CB7CEF00B6D8A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B93569D22CB7CEC00B6D8A0 /* HackNight-XCoordinator */;
+			targetProxy = 9B9356BE22CB7CEF00B6D8A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B9356AA22CB7CEF00B6D8A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B9356AB22CB7CEF00B6D8A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B9356C422CB7CEF00B6D8A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B9356C522CB7CEF00B6D8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B9356C722CB7CEF00B6D8A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F835822B656E8D0CB1A32C7 /* Pods-HackNight-XCoordinator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				INFOPLIST_FILE = "HackNight-XCoordinator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.HackNight-XCoordinator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B9356C822CB7CEF00B6D8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0870B4B225BBD1713069D484 /* Pods-HackNight-XCoordinator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				INFOPLIST_FILE = "HackNight-XCoordinator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.HackNight-XCoordinator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9B9356CA22CB7CEF00B6D8A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57BF891DDFC5E9B89175AD49 /* Pods-HackNight-XCoordinatorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				INFOPLIST_FILE = "HackNight-XCoordinatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.HackNight-XCoordinatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackNight-XCoordinator.app/HackNight-XCoordinator";
+			};
+			name = Debug;
+		};
+		9B9356CB22CB7CEF00B6D8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 710C252A8D0E5AEBB7239899 /* Pods-HackNight-XCoordinatorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				INFOPLIST_FILE = "HackNight-XCoordinatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.HackNight-XCoordinatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackNight-XCoordinator.app/HackNight-XCoordinator";
+			};
+			name = Release;
+		};
+		9B9356CD22CB7CEF00B6D8A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F77FB2D2DD445902FAD46B /* Pods-HackNight-XCoordinatorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				INFOPLIST_FILE = "HackNight-XCoordinatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.HackNight-XCoordinatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HackNight-XCoordinator";
+			};
+			name = Debug;
+		};
+		9B9356CE22CB7CEF00B6D8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 930F0DE2FC894CEE751C992F /* Pods-HackNight-XCoordinatorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				INFOPLIST_FILE = "HackNight-XCoordinatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.HackNight-XCoordinatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HackNight-XCoordinator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B93569922CB7CEC00B6D8A0 /* Build configuration list for PBXProject "HackNight-XCoordinator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9356C422CB7CEF00B6D8A0 /* Debug */,
+				9B9356C522CB7CEF00B6D8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B9356C622CB7CEF00B6D8A0 /* Build configuration list for PBXNativeTarget "HackNight-XCoordinator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9356C722CB7CEF00B6D8A0 /* Debug */,
+				9B9356C822CB7CEF00B6D8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B9356C922CB7CEF00B6D8A0 /* Build configuration list for PBXNativeTarget "HackNight-XCoordinatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9356CA22CB7CEF00B6D8A0 /* Debug */,
+				9B9356CB22CB7CEF00B6D8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B9356CC22CB7CEF00B6D8A0 /* Build configuration list for PBXNativeTarget "HackNight-XCoordinatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9356CD22CB7CEF00B6D8A0 /* Debug */,
+				9B9356CE22CB7CEF00B6D8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B93569622CB7CEC00B6D8A0 /* Project object */;
+}

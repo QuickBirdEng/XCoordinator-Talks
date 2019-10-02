@@ -1,6 +1,0 @@
-framework module Pods_HackNight_XCoordinator {
-  umbrella header "Pods-HackNight-XCoordinator-umbrella.h"
-
-  export *
-  module * { export * }
-}
